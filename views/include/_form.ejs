@@ -1,0 +1,74 @@
+<!-- form handling -->
+<form action="/api/users" id="add_user" method="POST">
+  <div class="new_user">
+    <div class="form-group">
+      <label for="name" class="text-light">Name</label>
+      <input type="hidden" name="id" value="" />
+      <input type="text" name="name" value="" placeholder="Dead John" />
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="text-light">Email</label>
+      <input
+        type="email"
+        name="email"
+        value=""
+        placeholder="example@gmail.com"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="gender" class="text-light">Gender</label>
+      <div class="radio inline">
+        <input
+          type="radio"
+          name="gender"
+          value="Male"
+          placeholder="example@gmail.com"
+          id="radio-1"
+        />
+        <label for="radio-1" class="radio-label">Male</label>
+      </div>
+
+      <div class="radio inline">
+        <input
+          type="radio"
+          name="gender"
+          value="Female"
+          placeholder="example@gmail.com"
+          id="radio-2"
+        />
+        <label for="radio-2" class="radio-label">Female</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="Status" class="text-light">Status</label>
+      <div class="radio inline">
+        <input
+          type="radio"
+          name="Status"
+          value="active"
+          placeholder="example@gmail.com"
+          id="radio-3"
+        />
+        <label for="radio-3" class="radio-label" value="Active">Active</label>
+      </div>
+
+      <div class="radio inline">
+        <input
+          type="radio"
+          name="Status"
+          value="inactive"
+          placeholder="example@gmail.com"
+          id="radio-4"
+        />
+        <label for="radio-4" class="radio-label" value="inactive">Inactive</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn text-dark update">Save</button>
+    </div>
+  </div>
+</form>
